@@ -1,1 +1,30 @@
 #!/usr/bin/env ruby
+
+require_relative '../lib/turn'
+
+# We need a board for playing
+board = [" ", " ", " ", " ", " ", " ", " "," "," "]
+
+# Welcome player
+puts "Welcome to Tic Tac Toe!"
+display_board(board)
+turn(board)
+turn(board)
+turn(board)
+turn(board)
+turn(board)
+turn(board)
+turn(board)
+turn(board)
+turn(board)
+
+
+#
+
+# Calls move passing the index
+# Move modifies the board
+# Call display_board with the modified board
+#move(board,nmovei,"X")
+
+# Application prints the board with a move to the top left
+#display_board(board)
