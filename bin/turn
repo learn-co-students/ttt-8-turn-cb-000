@@ -7,7 +7,3 @@ board = ["X", " ", " ", " ", " ", " ", " ", " ", " "]
 puts "Welcome to Tic Tac Toe!"
 display_board(board)
 turn(board)
-input_to_index(user_input)
-
-valid_move(board, index)
-move(board, index, token)
