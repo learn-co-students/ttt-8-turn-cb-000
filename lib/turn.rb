@@ -10,10 +10,11 @@ def turn(board)
     puts "Please enter 1-9:"
     user_input = gets.chomp
     input_to_index(user_input)
+    valid_move?(board, user_input.to_i - 1)
 end
 
 def input_to_index(user_input)
-    index = user_input.to_i -1
+    index = user_input.to_i - 1
 end
 
 def valid_move?(board, index)
@@ -22,6 +23,7 @@ def valid_move?(board, index)
       true
     else board[index] == "X" || board[index] == "O"
       false
+      turn(board)
     end
   end
 end
