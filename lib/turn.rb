@@ -11,13 +11,15 @@ def turn(board)
     user_input = gets.chomp
     input_to_index(user_input)
     valid_move?(board, user_input.to_i - 1)
-      if false
-        turn(board)
+      if (true)
+        move(board, index, token = "X")
       else
+        turn(board)
+      end
 end
 
 def input_to_index(user_input)
-    index = user_input.to_i - 1
+    user_input.to_i - 1
 end
 
 def valid_move?(board, index)
@@ -26,11 +28,10 @@ def valid_move?(board, index)
       true
     else board[index] == "X" || board[index] == "O"
       false
-      turn(board)
     end
   end
 end
 
-def move(board, index, token = "X")
+def move(board, index, token)
   board[index] = token
 end
