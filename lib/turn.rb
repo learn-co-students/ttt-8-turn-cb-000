@@ -11,6 +11,9 @@ def turn(board)
     user_input = gets.chomp
     input_to_index(user_input)
     valid_move?(board, user_input.to_i - 1)
+      if false
+        turn(board)
+      else
 end
 
 def input_to_index(user_input)
