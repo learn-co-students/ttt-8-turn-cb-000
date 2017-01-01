@@ -17,6 +17,7 @@ input =  input_to_index(input)
 if valid_move?(board,input)
 
 move(board,input, token = "X")
+  display_board(board)
 
 #else
 else
@@ -37,7 +38,7 @@ end
 #move method  should accept a board and an index from the user
 def move(board,index,token)
   board[index] = token
-  display_board(board)
+
 
 
 end
