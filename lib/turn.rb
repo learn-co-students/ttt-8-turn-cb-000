@@ -16,7 +16,7 @@ input =  input_to_index(input)
 
 if valid_move?(board,input)
 
-move(board,input, token = "X")
+move(board,input)
   display_board(board)
 
 #else
