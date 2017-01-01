@@ -36,8 +36,8 @@ def input_to_index(user_input)
 end
 
 #move method  should accept a board and an index from the user
-def move(board,index,token)
-  board[index] = token
+def move(board,index, current_player = "X")
+  board[index] = current_player
 
 
 
