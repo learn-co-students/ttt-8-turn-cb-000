@@ -30,9 +30,8 @@ end
 
 #convert input to index
 
-def input_to_index(index)
-  index = index.to_i
-  index -= 1
+def input_to_index(user_input)
+  user_input.to_i - 1
 end
 
 #move method  should accept a board and an index from the user
