@@ -41,6 +41,7 @@ def turn(board)
   unless position.is_a?(Integer) && position.between?(0, 8)
     puts "Please enter 1-9:"
     input = gets.strip
+    position = input_to_index(input)
   end
   move(board, position, player="X")
 end
