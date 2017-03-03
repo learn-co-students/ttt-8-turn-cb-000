@@ -45,26 +45,3 @@ puts " #{board[6]} | #{board[7]} | #{board[8]} "
 
 
 
-  #   if valid_move = false
-#     move(board, input)
-    #  display_board(board)
-  # else
-
-#  turn(board)
- #f valid_move == true
-
-
-  #  def turn(board)
-#    puts "Please enter 1-9:"
-#    input = gets.strip
-  #  move(board,index)
-  #  display_board(board)
-#   if input_to_index(board,input)
-  #   move(board, input)
-  #    valid_move?(board, index)
- #else
-  # turn(board)
-   #end
-  #  display_board(board)
-
-#end
