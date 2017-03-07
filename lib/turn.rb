@@ -9,13 +9,13 @@ end
 
 # code your take turn method here!
 def turn(board)
-  your_turn = true
-  while your_turn
+  player_x = true
+  while player_x == true
     puts "Please enter 1-9:"
     input = gets.strip
     index = input_to_index(input)
     if valid_move?(board, index) == true
-      your_turn = false
+      player_x = false
     end
   end
   move(board, index, "X")
