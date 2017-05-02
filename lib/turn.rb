@@ -46,7 +46,7 @@ def move(board, position, char="X")
 end
 
 def turn(board)
-  loop {
+#  loop {
     puts ("Please enter 1-9:")
     input = gets.chomp
     index = input_to_index(input)
@@ -55,9 +55,10 @@ def turn(board)
       display_board(board)
     else
       puts("Sorry, #{input} is not valid!")
+      turn(board) # remove this recursion when loop activated
     end
-    if !(board.include?(" ") || board.include?("") || board.include?(nil))
-      break
-    end
-  }
+#    if !(board.include?(" ") || board.include?("") || board.include?(nil))
+#      break
+#    end
+#  }
 end
