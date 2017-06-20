@@ -17,7 +17,3 @@ turn(board)
 turn(board)
 turn(board)
 turn(board)
-
-# 9.times do
-# 	do turn(board)
-# end
