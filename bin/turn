@@ -1,1 +1,19 @@
 #!/usr/bin/env ruby
+require_relative '../lib/turn.rb'
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+# Code your CLI Here
+puts "Welcome to Tic Tac Toe!"
+puts " 1 | 2 | 3 "
+puts "-----------"
+puts " 4 | 5 | 6 "
+puts "-----------"
+puts " 7 | 8 | 9 "
+print "Please enter 1-9:"
+
+space = gets.strip
+space = input_to_index(space)
+
+# print "Enter your symbol (X, O): "
+# symbol = gets.strip
+
+move(board, space, "X")
