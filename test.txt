@@ -1,0 +1,31 @@
+
+./lib/turn.rb
+  #display_board
+    prints arbitrary arrangements of the board
+  #input_to_index
+    converts a user_input to an integer
+    subtracts 1 from the user_input
+    returns -1 for strings without integers
+  #valid_move?
+    returns true/false based on index
+  #move
+    allows "X" player in the bottom right and "O" in the top left (FAILED - 1)
+
+Failures:
+
+  1) ./lib/turn.rb #move allows "X" player in the bottom right and "O" in the top left 
+     Failure/Error: expect(board).to eq(["O", " ", " ", " ", " ", " ", " ", " ", "X"])
+       
+       expected: ["O", " ", " ", " ", " ", " ", " ", " ", "X"]
+            got: [" ", " ", " ", " ", " ", " ", " ", "X", "O"]
+       
+       (compared using ==)
+     # ./spec/turn_spec.rb:73:in `block (3 levels) in <top (required)>'
+
+Finished in 0.02466 seconds (files took 0.18518 seconds to load)
+6 examples, 1 failure
+
+Failed examples:
+
+rspec ./spec/turn_spec.rb:68 # ./lib/turn.rb #move allows "X" player in the bottom right and "O" in the top left 
+
