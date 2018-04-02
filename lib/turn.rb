@@ -19,7 +19,7 @@ def valid_move?(board, index)
     end
   else
     false
-  end
+ end
 end
 
 # re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
@@ -28,7 +28,7 @@ def position_taken?(board, index)
     false
   else
     true
-  end
+ end
 end
 # Move 
 def input_to_index(input)
