@@ -1,5 +1,5 @@
-def move(board, position, letter="X")
-  board[position] = letter
+def move(board, position, current_player = "X")
+  board[position] = current_player
 end
 
 def input_to_index(input)
@@ -40,5 +40,6 @@ def turn(board)
   puts "Invalid Entry"
   turn(board)
   end
-  move(board,input)
+  move(board,input,letter="X")
+  display_board(board)
 end
