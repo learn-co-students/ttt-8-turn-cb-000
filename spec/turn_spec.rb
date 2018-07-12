@@ -141,13 +141,13 @@ describe './lib/turn.rb' do
     it 'displays a correct board after a valid turn' do
       board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
-      allow(self).to receive(:gets).and_return("5")
+      allow(self).to receive(:gets).and_return("4")
 
       output = capture_puts{ turn(board) }
 
       expect(output).to include("   |   |   ")
       expect(output).to include("-----------")
-      expect(output).to include("   | X |   ")
+      expect(output).to include(" X |   |   ")
       expect(output).to include("-----------")
       expect(output).to include("   |   |   ")
     end
